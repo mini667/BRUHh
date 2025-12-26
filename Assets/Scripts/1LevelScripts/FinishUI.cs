@@ -55,7 +55,7 @@ public class FinishUI : MonoBehaviour
         int stars = StarManager.Instance.GetStars();
 
         timeText.text = "Вы прошли за: " + time.ToString("F2") + " сек";
-        starText.text = "Звёзд собрано: " + stars;
+        starText.text = "Песен собрано: " + stars;
 
         SaveResult(time, stars);
 
