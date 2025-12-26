@@ -1120,6 +1120,7 @@ GameObject:
   - component: {fileID: 424078540}
   - component: {fileID: 424078542}
   - component: {fileID: 424078541}
+  - component: {fileID: 424078543}
   m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
@@ -1203,6 +1204,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8074722, y: 0.5698683}
   m_EdgeRadius: 0
+--- !u!114 &424078543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424078539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b604d78410f9a6b428b0bbaa5cae428e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1125707802}
+  firstButton: {fileID: 604396535}
+  secondButton: {fileID: 1613545993}
 --- !u!1 &438279402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,8 +1589,8 @@ MonoBehaviour:
   nextLevelScene: 3Level
   levelMenuScene: LevelMenu
   levelIndex: 2
-  nextLevelButton: {fileID: 604396538}
-  menuButton: {fileID: 1613545996}
+  nextLevelButton: {fileID: 0}
+  menuButton: {fileID: 0}
   inGameTimer: {fileID: 578226987}
 --- !u!114 &536295947
 MonoBehaviour:
@@ -1807,13 +1823,14 @@ GameObject:
   - component: {fileID: 604396540}
   - component: {fileID: 604396539}
   - component: {fileID: 604396538}
+  - component: {fileID: 604396541}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &604396536
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1916,6 +1933,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604396535}
   m_CullTransparentMesh: 1
+--- !u!114 &604396541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604396535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf67a712ff2bef1409d2d0d3b12efc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 604396538}
+  sceneName: 3Level
 --- !u!1 &653416994
 GameObject:
   m_ObjectHideFlags: 0
@@ -4708,13 +4739,14 @@ GameObject:
   - component: {fileID: 1613545998}
   - component: {fileID: 1613545997}
   - component: {fileID: 1613545996}
+  - component: {fileID: 1613545999}
   m_Layer: 5
   m_Name: BackButton (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1613545994
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4817,6 +4849,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613545993}
   m_CullTransparentMesh: 1
+--- !u!114 &1613545999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613545993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf67a712ff2bef1409d2d0d3b12efc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1613545996}
+  sceneName: LevelMenu
 --- !u!1 &1617171563
 GameObject:
   m_ObjectHideFlags: 0
